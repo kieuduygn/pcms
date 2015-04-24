@@ -65,6 +65,7 @@ class Admin extends Admin_Controller {
 	/**
 	 * Choose a page type
 	 */
+        
 	public function choose_type()
 	{
 		// Get our types.

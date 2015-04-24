@@ -13,36 +13,36 @@
 <?php endif;?>
 
 <?php echo form_open('register', array('id' => 'register')) ?>
-<ul>
+
 	
 	<?php if ( ! Settings::get('auto_username')): ?>
-	<li>
+	<div class="form-group">
 		<label for="username"><?php echo lang('user:username') ?></label>
-		<input type="text" name="username" maxlength="100" value="<?php echo $_user->username ?>" />
-	</li>
+                <input class="form-control" type="text" name="username" maxlength="100" value="<?php echo $_user->username ?>" />
+	</div>
 	<?php endif ?>
 	
-	<li>
+	<div class="form-group">
 		<label for="email"><?php echo lang('global:email') ?></label>
-		<input type="text" name="email" maxlength="100" value="<?php echo $_user->email ?>" />
+                <input class="form-control" type="text" name="email" maxlength="100" value="<?php echo $_user->email ?>" />
 		<?php echo form_input('d0ntf1llth1s1n', ' ', 'class="default-form" style="display:none"') ?>
-	</li>
+	</div>
 	
-	<li>
+	<div class="form-group">
 		<label for="password"><?php echo lang('global:password') ?></label>
 		<input type="password" name="password" maxlength="100" />
-	</li>
+	</div>
 
 	<?php foreach($profile_fields as $field) { if($field['required'] and $field['field_slug'] != 'display_name') { ?>
-	<li>
+	<div class="form-group">
 		<label for="<?php echo $field['field_slug'] ?>"><?php echo (lang($field['field_name'])) ? lang($field['field_name']) : $field['field_name'];  ?></label>
 		<div class="input"><?php echo $field['input'] ?></div>
-	</li>
+	</div>
 	<?php } } ?>
 
 	
-	<li>
-		<?php echo form_submit('btnSubmit', lang('user:register_btn')) ?>
-	</li>
-</ul>
+	<div class="form-group">
+            <button class="btn btn-success" type="submit"><?php echo lang('user:register_btn') ?></button>
+	</div>
+
 <?php echo form_close() ?>
