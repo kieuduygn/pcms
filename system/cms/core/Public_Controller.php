@@ -16,6 +16,7 @@ class Public_Controller extends MY_Controller
 	{
 		parent::__construct();
 
+              
 		$this->benchmark->mark('public_controller_start');
 
 		// Check redirects if GET and Not AJAX

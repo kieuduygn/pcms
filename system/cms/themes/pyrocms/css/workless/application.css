@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,500italic,700,700italic,900,900italic,400italic,300italic,300,100italic,100);
+
 /*
  * PyroCMS LLC
  * Developed by @joshuapekera, @philsturgeon, @jerelunruh, @adamfairholm
@@ -8,6 +10,10 @@
  * ----------------------------------
  * Mobile first, everything else is overridden in responsive.css
  * ---------------------------------- */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 
 #container {
   width: 280px;
@@ -108,6 +114,7 @@
   -webkit-background-clip: padding-box;
      -moz-background-clip: padding;
           background-clip: padding-box;
+font-size: 15px;
 }
 
 #dashboard-link a:hover {

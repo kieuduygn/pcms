@@ -48,9 +48,7 @@ figure {
  * Base
  */
 
-* {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+
 
 html,
 body {
@@ -272,7 +270,7 @@ sub {
 
 p {
   margin: 0 0 1.125em;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.125em;
   color: #333;
 }
@@ -1961,14 +1959,7 @@ li.pill {
   z-index: 9998;
   height: 50px;
   overflow: visible;
-  background-color: #444;
-  background-image: url('../../img/nav-grain.png'), -webkit-gradient(linear, left top, left bottom, color-stop(0%, #555555), color-stop(100%, #333333));
-  background-image: url('../../img/nav-grain.png'), -webkit-linear-gradient(top, #555555, #333333);
-  background-image: url('../../img/nav-grain.png'), -moz-linear-gradient(top, #555555, #333333);
-  background-image: url('../../img/nav-grain.png'), -ms-linear-gradient(top, #555555, #333333);
-  background-image: url('../../img/nav-grain.png'), -o-linear-gradient(top, #555555, #333333);
-  background-image: url('../../img/nav-grain.png'), linear-gradient(top, #555555, #333333);
-  background-repeat: repeat-x;
+  background-color: #000;
   border-top: 1px solid #6e6e6e;
   border-bottom: 1px solid #1a1a1a;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
@@ -2020,7 +2011,8 @@ li.pill {
 .topbar ul li {
   position: relative;
   float: left;
-  font-size: 13px;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .topbar ul li a {
